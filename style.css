@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+section{
+    display: flex;
+    align-items:center ;
+    justify-content:space-around;
+    height: 12vh;
+    border-bottom: solid 1px rgb(192, 186, 186);
+}
+figure{
+    display: flex;
+    justify-content: space-between;
+    width: 12vw;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30vw;
+    list-style: none;
+}
+
+
+/* 
+
+media queries
+
+@media -> E uma regra de estilo CSS, que permite
+que criemos estilo de páginas totalmente voltado
+para dispositivos de largura menor ou maior sejam esses
+dispositivos celulares, smart tvs, ipad, tablet, smartwaches, moveis...
+
+sintaxe (forma de escrita)
+
+@media screen and (max-width:500px){
+ aqui acima estamos declarando a seguinte regra
+ de estilo CSS, quando a tela for menor que 500px,
+ aplique o estilo definido aqui dentro
+
+ o max de 0 ao máximo de 500px.
+}
+
+@media screen and (min-width:1300px){
+ aqui acima estamos declarando a seguinte regra
+ de estilo CSS, quando a tela for maior que 1300px,
+ aplique o estilo definido aqui dentro
+
+ o min que o minimo e 1300px para cima.
+}
+*/
+@media screen and (max-width:500px) {
+    body{
+        background-color: tomato;
+        color: green;
+    }
+    section{
+        flex-direction: column;
+    }
+}
