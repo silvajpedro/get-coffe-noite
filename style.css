@@ -22,7 +22,9 @@ ul{
     width: 30vw;
     list-style: none;
 }
-
+li:hover{
+    color: rgb(239, 12, 8);
+}
 
 /* 
 
@@ -36,6 +38,9 @@ dispositivos celulares, smart tvs, ipad, tablet, smartwaches, moveis...
 sintaxe (forma de escrita)
 
 @media screen and (max-width:500px){
+
+    background-color:tomato;
+
  aqui acima estamos declarando a seguinte regra
  de estilo CSS, quando a tela for menor que 500px,
  aplique o estilo definido aqui dentro
@@ -52,11 +57,22 @@ sintaxe (forma de escrita)
 }
 */
 @media screen and (max-width:500px) {
-    body{
-        background-color: tomato;
-        color: green;
-    }
+    
     section{
+       
         flex-direction: column;
+        /* border:solid purple; */
+        height:20vh ;
+    }
+    figure{
+        /* border: solid red; */
+        width: 36vw;
+    }
+    ul{
+        /* border: solid green; */
+        width:44vw;
+    }
+    main img{
+        display: none;
     }
 }
